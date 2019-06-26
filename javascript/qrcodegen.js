@@ -55,7 +55,7 @@
  *   - Enum Mode:
  *     - Constants NUMERIC, ALPHANUMERIC, BYTE, KANJI, ECI
  */
-var qrcodegen = new function() {
+const qrcodegen = new function() {
 	
 	/*---- QR Code symbol class ----*/
 	
@@ -1044,3 +1044,7 @@ var qrcodegen = new function() {
 	BitBuffer.prototype.constructor = BitBuffer;
 	
 };
+
+module.exports = {
+	qrcodegen
+}
